@@ -28,8 +28,6 @@ public class Task implements Comparable<Task> {
 	// compareToメソッドをオーバーライドする
 	// 日付で並び替えるため、LocalDateのcompareToを使う
 
-
-
 	@Override
 	public int compareTo(Task t) {
 		return this.date.compareTo(t.date);

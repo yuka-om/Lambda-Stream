@@ -16,7 +16,7 @@ public class Chapter10 {
 		long i = list.stream()
 				.filter(t -> t.isDone() == false)
 				.count();
-		
+
 		System.out.println("未完了のタスクの個数は"+ i);
 		System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
 
@@ -25,11 +25,6 @@ public class Chapter10 {
 		.filter(t -> t.isDone() == false)
 		.sorted((t1, t2) -> t1.compareTo(t2))
 		.forEach(System.out::println);
-
-
-
-
-
 	}
 }
 
